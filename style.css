@@ -1,0 +1,111 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+.container{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.form-section{
+  width:40%;
+  padding:30px;
+  color:white;
+}
+.preview-section{
+  width:60%;
+  padding:30px;
+  background:white;
+  color:black;
+  min-height:100vh;
+}
+
+input,textarea{
+  width:100%;
+  margin:10px 0;
+  padding:12px;
+  border-radius:10px;
+  border:none;
+}
+button{
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  background:black;
+  color:white;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+/* RESUME DESIGN */
+.resume{
+  max-width:800px;
+  margin:auto;
+}
+
+/* NAME */
+.resume h1{
+  font-size:32px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+/* 🔥 IMPORTANT: allow dynamic font size */
+.resume p{
+  font-size:inherit;
+  margin:5px 0;
+  line-height:1.6;
+}
+
+/* 🔥 SECTION TITLE (CLEAN LINE STYLE) */
+.section-title{
+  margin-top:20px;
+  font-size:16px;
+  font-weight:bold;
+  letter-spacing:1px;
+  border-bottom:2px solid black;
+  padding-bottom:5px;
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+
+  body{
+    background:white !important;
+  }
+
+  html, body {
+    margin:0;
+    padding:0;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #resume, #resume * {
+    visibility: visible;
+  }
+
+  #resume {
+    position:absolute;
+    top:0;
+    left:0;
+    width:210mm;
+    min-height:297mm;
+    padding:20mm;
+    background:white;
+    color:black;
+  }
+
+}
